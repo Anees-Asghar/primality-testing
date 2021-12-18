@@ -22,6 +22,8 @@ def is_prime(n):
 		return False
 	elif n in [2, 3]:
 		return True
+	elif not n % 2:
+		return False
 
 	k = math.ceil(n * 0.20)
 
@@ -38,8 +40,8 @@ if __name__ == "__main__":
 
 	test_set = [2, 3, 4, 5, 7, 8, 11, 21, 29]
 
-	for t in test_set:
-		if is_prime(t):
-			print(f"{t} is most likely a prime.")
+	for n in test_set:
+		if is_prime(n):
+			print(f"{n} is a prime.")
 		else:
-			print(f"{t} is not a prime.")
+			print(f"{n} is not a prime.")
