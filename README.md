@@ -1,2 +1,2 @@
 # Primality Testing
-Using the Fermat's Little Theorem, checks whether the given number is a prime.
+Tests based on Fermat's little theorem and Miller-Rabin algorithm to check a number for primality.
